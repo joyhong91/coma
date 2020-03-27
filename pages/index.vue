@@ -3,7 +3,7 @@
     <div>
       <logo />
       <h1 class="title">
-        coma
+        coma111111
       </h1>
       <h2 class="subtitle">
         My slick Nuxt.js project
