@@ -101,6 +101,7 @@
 
 .img_wrapper {
     position: relative;
+    width: 100%;
 }
 .intro_img{
     width: 100%;
