@@ -115,25 +115,43 @@
 
 .img_wrapper:not(.fst) .btn_wrapper{
     position: absolute;
-    bottom: 45%;
     width: 100%;
+    height: 100%;
+    top: 0;
 }
 
-.img_wrapper:not(.fst) .btn_prev img,
-.img_wrapper:not(.fst) .btn_next img{
-    width: 6%;
+.img_wrapper:not(.fst) .btn_prev,
+.img_wrapper:not(.fst) .btn_next{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, .04);
 }
 
-.btn_prev img{
+.img_wrapper:not(.fst) .btn_prev {
     float: left;
 }
+.img_wrapper:not(.fst) .btn_next {
+    float: right;
+}
 
-.btn_next img,
-.btn_prev img{
+.img_wrapper.fst .btn_next img{
     max-width: 23%;
     display: block;
     margin-left: auto;
     margin-bottom: 3px;
+}
+
+.img_wrapper:not(.fst) .btn_prev img,
+.img_wrapper:not(.fst) .btn_next img{
+    width: 97%;
+}
+
+
+.btn_next img,
+.btn_prev img{
     -webkit-animation:blink 0.7s ease-in-out infinite alternate;
     -moz-animation:blink 0.7s ease-in-out infinite alternate;
     animation:blink 0.7s ease-in-out infinite alternate;
@@ -141,15 +159,15 @@
 
 @-webkit-keyframes blink{
     0% {opacity:0;}
-    100% {opacity:1;}
+    100% {opacity:0.5;}
 }
 @-moz-keyframes blink{
     0% {opacity:0;}
-    100% {opacity:1;}
+    100% {opacity:0.5;}
 }
 @keyframes blink{
     0% {opacity:0;}
-    100% {opacity:1;}
+    100% {opacity:0.5;}
 }
 
 
